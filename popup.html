@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Container Tab Opener</title>
+
+    <link
+        rel="stylesheet"
+        href="popup.css"
+    >
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Container Tab Opener</h1>
+
+        <p class="description">
+            Open the same webpage in separate Firefox containers.
+        </p>
+
+        <div
+            id="containerStatus"
+            class="container-status"
+        >
+            Detecting Firefox containers...
+        </div>
+
+
+        <label for="url">
+            Website URL
+        </label>
+
+        <input
+            id="url"
+            type="text"
+            placeholder="https://example.com"
+            autocomplete="off"
+        >
+
+
+        <label for="tabCount">
+            Number of Tabs
+        </label>
+
+        <input
+            id="tabCount"
+            type="number"
+            min="1"
+            step="1"
+            placeholder="30"
+        >
+
+
+        <button
+            id="openButton"
+            type="button"
+        >
+            Open Container Tabs
+        </button>
+
+
+        <div
+            id="message"
+            class="message"
+        ></div>
+
+
+        <div class="container-list-section">
+
+            <div class="container-list-title">
+                Containers that will be used
+            </div>
+
+            <div
+                id="containerList"
+                class="container-list"
+            >
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="popup.js"></script>
+
+</body>
+</html>

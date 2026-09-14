@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "Firefox Container Tab Opener",
+  "version": "1.0.0",
+  "description": "Open the same webpage in multiple Firefox containers.",
+  "permissions": [
+    "tabs",
+    "cookies",
+    "contextualIdentities"
+  ],
+  "action": {
+    "default_title": "Container Tab Opener",
+    "default_popup": "popup.html"
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "container-tab-opener@local"
+    }
+  }
+}

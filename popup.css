@@ -1,0 +1,188 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+
+    width: 380px;
+
+    font-family:
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Arial,
+        sans-serif;
+
+    background: #1c1b22;
+    color: #ffffff;
+}
+
+.container {
+    padding: 20px;
+}
+
+h1 {
+    margin: 0 0 6px 0;
+
+    font-size: 21px;
+    font-weight: 700;
+}
+
+.description {
+    margin: 0 0 18px 0;
+
+    color: #b1b1b3;
+
+    font-size: 13px;
+    line-height: 1.4;
+}
+
+.container-status {
+    padding: 10px 12px;
+    margin-bottom: 18px;
+
+    border-radius: 6px;
+
+    background: #2b2a33;
+
+    color: #cfcfd8;
+
+    font-size: 13px;
+}
+
+label {
+    display: block;
+
+    margin-top: 14px;
+    margin-bottom: 6px;
+
+    font-size: 13px;
+    font-weight: 600;
+}
+
+input {
+    width: 100%;
+
+    padding: 10px 11px;
+
+    border: 1px solid #52525e;
+    border-radius: 6px;
+
+    outline: none;
+
+    background: #2b2a33;
+    color: #ffffff;
+
+    font-size: 14px;
+}
+
+input:focus {
+    border-color: #0060df;
+}
+
+button {
+    width: 100%;
+
+    margin-top: 18px;
+    padding: 11px;
+
+    border: none;
+    border-radius: 6px;
+
+    background: #0060df;
+    color: #ffffff;
+
+    font-size: 14px;
+    font-weight: 700;
+
+    cursor: pointer;
+}
+
+button:hover {
+    background: #0250bb;
+}
+
+button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.message {
+    margin-top: 12px;
+
+    font-size: 13px;
+    line-height: 1.4;
+}
+
+.message.error {
+    padding: 10px;
+
+    border-radius: 6px;
+
+    background: #4b1111;
+    color: #ffb3b3;
+}
+
+.message.success {
+    padding: 10px;
+
+    border-radius: 6px;
+
+    background: #123d25;
+    color: #b7f7cc;
+}
+
+.container-list-section {
+    margin-top: 20px;
+}
+
+.container-list-title {
+    margin-bottom: 8px;
+
+    color: #b1b1b3;
+
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.container-list {
+    max-height: 190px;
+
+    overflow-y: auto;
+
+    border-radius: 6px;
+
+    background: #2b2a33;
+}
+
+.container-item {
+    display: flex;
+
+    align-items: center;
+
+    padding: 8px 10px;
+
+    border-bottom: 1px solid #3a3944;
+
+    font-size: 12px;
+}
+
+.container-item:last-child {
+    border-bottom: none;
+}
+
+.container-number {
+    width: 28px;
+
+    color: #8f8f9d;
+}
+
+.container-name {
+    flex: 1;
+}
+
+.container-unused {
+    opacity: 0.35;
+}
